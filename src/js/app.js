@@ -1,11 +1,5 @@
-// TODO: write your code here
 
-
-const findBy = (key, value) => function (key, value) {
-  return key.key === `${value}`;
-};
-
-// (result) => result.name === 'маг'
+import findBy from './findBy';
 
 const finder = findBy('name', 'заклинание');
 const results = [
@@ -14,5 +8,5 @@ const results = [
   { name: 'урон', type: 'help', description: 'Страница описания элемента интерфейса' },
 ].filter(finder);
 
-console.log(results);
 
+export default results;
